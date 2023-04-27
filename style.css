@@ -574,6 +574,94 @@ img {
   margin-bottom: 5px;
 }
 
+.accordion {
+  margin-top: -20px;
+}
+
+.accordion__item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion__question {
+  position: relative;
+  font-weight: normal;
+  padding: 20px 30px 15px 0;
+  cursor: pointer;
+}
+
+.accordion__question::after {
+  display: block;
+  content: "expand_more";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-family: "Material Icons Round";
+  font-size: 24px;
+  color: var(--main-color);
+  transform: translateY(-50%);
+}
+
+.accordion__question.active::after {
+  content: "expand_less";
+}
+
+.accordion__answer {
+  display: none;
+  padding-bottom: 15px;
+}
+
+.accordion__answer.active {
+  display: block;
+}
+
+.accordion__question-inner,
+.accordion__answer-inner {
+  display: flex;
+  column-gap: 15px;
+}
+
+.accordion__label {
+  flex: 0 0 25px;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--main-color);
+  text-align: center;
+}
+
+.accordion__text {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.cta {
+  padding-top: 30px;
+}
+
+.cta__body {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: var(--main-color);
+}
+
+
+.cta__title {
+  font-size: 26px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer {
+  display: grid;
+  color: #fff;
+  padding: 50px 20px;
+  background-color: #141414;
+
+  place-items: center;
+}
+
+
+
+
 
 
 
